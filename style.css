@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Utility classes */
+main {
+  background-color: #0a101e;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sec-heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fec544;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 60px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+
+/* Header section css */
+#header-section {
+  background-color: #03070f;
+  position: sticky;
+  top: 0;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+}
+#navbar .ul-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+#navbar .logo {
+  font-size: 25px;
+}
+#navbar .logo a:hover {
+  color: #00ffee;
+}
+#navbar .logo span {
+  color: #00ffee;
+}
+#navbar li {
+  font-size: 22px;
+  font-weight: bold;
+  list-style: none;
+}
+#navbar ul li a:hover {
+  color: #00ffee;
+  border-bottom: 3px solid #00ffee;
+}
+#navbar ul > :nth-child(1) > a {
+  color: #00ffee;
+  border-bottom: 3px solid #00ffee;
+}
+
+/* Hero section css */
+#hero-section {
+  padding-top: 60px;
+}
+#hero-section h1 {
+  font-size: 120px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  color: #fdfeff;
+  line-height: 1;
+}
+#hero-section h3 {
+  font-size: 30px;
+  margin-top: -6px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: #fec544;
+}
+#hero-section h2 {
+  font-size: 36px;
+  margin-bottom: 70px;
+  font-weight: 300;
+  color: #a9adb8;
+}
+#hero-section .image {
+  padding-left: 130px;
+}
+#hero-section .cv-btn {
+  margin-top: 43px;
+}
+#hero-section .cv-btn a {
+  background-color: #fec544;
+  color: #070d1b;
+  font-weight: bold;
+  padding: 16px 3.5em;
+  border-radius: 50px;
+}
+
+
+/* About section css */
+#about-section {
+  padding: 100px 0px;
+}
+#about-section .description {
+  padding-left: 75px;
+}
+#about-section .description h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 19px;
+}
+#about-section .description h4 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fec544;
+  margin-bottom: 19px;
+}
+
+#about-section .description p {
+  margin-bottom: 19px;
+  font-size: 18px;
+}
+#about-section .description li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  padding-right: 10px;
+}
+#about-section .description span {
+  width: 108px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+#about-section .cv-btn {
+  margin-top: 43px;
+}
+#about-section .cv-btn a {
+  background-color: #fec544;
+  color: #070d1b;
+  font-weight: bold;
+  padding: 16px 1.5em;
+  border-radius: 50px;
+}
+
+/* Resume css */
+/* #resume-sec .edu-col,
+.exp-col {
+  padding: 0px 15px;
+}
+#resume-sec .timeline-container {
+  padding-left: 40px;
+  margin-left: 20px;
+  border-left: 1px solid #232935; 
+}  */
+
+/* Services section css */
+
+#services-sec .services-col {
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 3px;
+  border: 1px solid #232935;
+  background-color: #101624;
+}
+#services-sec .services-col:hover .icon-box {
+  border: 0.5px solid #fec544;
+  color: #fec544;
+}
+#services-sec .services-col:hover h3 {
+  color: #fec544;
+}
+
+#services-sec .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border: 0.5px solid #3f4551;
+  border-radius: 50%;
+  background-color: #070d1b;
+  margin: auto;
+  font-size: 50px;
+  margin-bottom: 28px;
+}
+#services-sec .row .services-contain {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#services-sec .row .services-contain {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#services-sec .row .services-contain .services-col {
+  margin-bottom: 30px;
+}
+#services-sec h3 {
+  font-weight: 400;
+  line-height: 1.2em;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+#services-sec p {
+  font-size: 18px;
+}
+
+/*contact section css */
+
+input {
+  background: transparent;
+  width: 100%;
+  color: #a9adb8;
+  padding: 12px 20px;
+  border: 1px solid #232935;
+  background-color: #101624;
+  height: 52px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+}
+textarea {
+  width: 100%;
+  color: #a9adb8 !important;
+  padding: 12px 20px;
+  border: 1px solid #232935;
+  background-color: #101624;
+  border-radius: 7px;
+  overflow: auto;
+  resize: vertical;
+  margin-bottom: 30px;
+}
+
+#contact .btn {
+  line-height: 1.5em;
+  font-weight: 500;
+  padding: 12px 1.5em;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  background-color: #fec544;
+  color: #070d1b;
+  font-size: 16px;
+}
+#contact .contact-heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+/* Skills section css */
+
+#skills-section h3 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  line-height: 1.2em;
+}
+#skills-section p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+#skills-section .col-1 {
+  padding-top: 60px;
+  padding-left: 10px;
+}
+
+/* Progrees bar css */
+
+.col-1,
+.col-2 {
+  flex: 1 0 0;
+}
+.skills {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+.skill-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.skill-bar {
+  height: 10px;
+  background-color: #282828;
+  border-radius: 3px;
+}
+.skill-per {
+  height: 10px;
+  background-color: #fec544;
+  border-radius: 3px;
+  position: relative;
+  animation: fillbars 10s 1;
+  animation-timeline: view();
+}
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 3px 5px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  color: black;
+  top: -44px;
+  right: 0;
+  transform: translate(50%);
+}
+
+.skill-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -19px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 1px;
+}
+
+@keyframes fillbars {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
